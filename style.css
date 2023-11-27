@@ -104,3 +104,6 @@ small{
     background-color: var(--color-success);
     border: none;
 }
+.navbar-toggler{
+    color: var(--color-white);
+}
