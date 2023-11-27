@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+     
+      <!-- navbar -->
+      <nav class=" navbar navbar-expand-lg --bg-dark-light fixed-top ">
+        <div class="container-fluid">
+          <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+             
+            <span class="navbar-toggler-icon" data-bs-target="#offcanvasExample" ></span>
+          </button>
+          <a class="navbar-brand" href="#">kotbi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex align-items-center " role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <span type="submit"><i class="fa fa-search" aria-hidden="true"></i></span>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar -->
+      <!-- sidebare  -->
+    
+      
+      <div class="offcanvas offcanvas-start sidebar-nav --bg-dark text-white" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+        </div>
+        <div class="offcanvas-body p-0 ">
+         <nav class="navbar-dark ">
+          <ul class="navbar-nav ">
+            <li>
+              <div class=" small text-muted  fw-bold text-uppercase px-3 ">core</div>
+            </li>
+            <li ><a href="#" class="nav-link px-3 active">
+              <span class="me-2"><i class="fa fa-tachometer" aria-hidden="true"></i></span>
+              <span>Dashboard</span>
+            </a>
+            </li>
+            <li class="my-4">
+              <hr class="" />
+            </li>
+            <li>
+              <div class="small text-muted  fw-bold text-uppercase px-3 ">interface</div>
+            </li>
+            <li>
+              <a class="nav-link px-3 sidebare-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <span class="me-2"><i class="fa fa-list" aria-hidden="true"></i></span>
+              <span>item</span><span class="right-icon ms-auto "><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+              </a>
+              <div class="collapse" id="collapseExample">
+                <div class="">
+                  <ul class="navbar-nav ps-3 ">
+                    <li>
+                      <a href="items.html" class="nav-link px-3 active">
+                        <span class="me-2"><i class="fa fa-list" aria-hidden="true"></i></span>
+                        <span>item1</span>
+                      </a>
+                    </li>
+                  </ul>
+                 </div>
+              </div>
+            </li>
+            <li ><a href="#" class="nav-link px-3 active">
+              <span class="me-2"><i class="fa fa-list" aria-hidden="true"></i></span>
+              <span>Layouts</span>
+            </a>
+            </li>
+            <li class="my-4">
+              <hr class="" />
+            </li>
+          </ul>
+         </nav>
+        </div>
+      </div>
+      <!-- sidebare -->
+<!-- main -->
+<main class="mt-5 pt-5 ">
+ <div class="container-fluid ">
+  <div class="row">
+    <div class="col-md-12">
+      <h4>Dashboard</h4>
+    </div>
+  </div>
+  <!-- <div class="row">
+    <div class="col-md-3 mb-3">
+      <div class="card bg-primary text-white h-100">
+        <div class="card-body py-5">Primary Card</div>
+        <div class="card-footer d-flex">
+          View Details
+          <span class="ms-auto">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card bg-warning text-dark h-100">
+        <div class="card-body py-5">Warning Card</div>
+        <div class="card-footer d-flex">
+          View Details
+          <span class="ms-auto">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card bg-success text-white h-100">
+        <div class="card-body py-5">Success Card</div>
+        <div class="card-footer d-flex">
+          View Details
+          <span class="ms-auto">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card bg-danger text-white h-100">
+        <div class="card-body py-5">Danger Card</div>
+        <div class="card-footer d-flex">
+          View Details
+          <span class="ms-auto">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="row">
+    <div class="col-md-3 mb-3">
+      <div class="card dashbord-card h-100">
+        <div class="card-body py-5 d-flex align-items-center justify-content-between "style="border-left: 8px solid #42fa2a;"><span>Primary Card</span>
+          <span><i class="fa fa-truck" style="font-size:27px;" aria-hidden="true"></i></span>
+        </div>
+        
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" style="width:45%">45%</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card dashbord-card h-100">
+        <div class="card-body py-5 d-flex align-items-center justify-content-between "style="border-left: 8px solid #E4572E;"><span>Primary Card</span>
+          <span><i class="fa fa-bar-chart" style="font-size:27px;" aria-hidden="true"></i></span>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" style="width:20%">20%</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card dashbord-card h-100">
+        <div class="card-body py-5 d-flex align-items-center justify-content-between "style="border-left: 8px solid #95D7AE;"><span>Primary Card</span>
+          <span><i class="fa fa-shopping-cart" style="font-size:27px;" aria-hidden="true"></i></span>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" style="width:75%">75%</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card dashbord-card h-100">
+        <div class="card-body py-5 d-flex align-items-center justify-content-between "style="border-left: 8px solid #F2545B;"><span>Primary Card</span>
+          <span><i class="fa fa-cube" style="font-size:27px;" aria-hidden="true"></i></span>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" style="width:25%">25%</div>
+        </div>
+      </div>
+    </div>
+ 
+  <div class="row my-2">
+    <div class="col-md-6">
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div>
+        <canvas id="myChart2"></canvas>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+ </div>
+</main>
+<!-- main -->
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/97974f9c24.js"></script>
+<!-- Font Awesome -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="chart.js"></script>
+      <script src="chart2.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --offcanvas-width:250px;
+    --offcanvas-height:56px;
+    --color-dark: #0B3954;
+    --color-secondary:#087E8B;
+    --color-white:#fff;
+    --color-dark-light:#7f8174;
+    --color-danger:#F2545B;
+    --color-success:#95D7AE;
+}
+.sidebar-nav{
+    width: var(--offcanvas-width)!important;
+}
+@media (min-width:992px) {
+    body{
+        overflow: auto!important;
+    }
+    main {
+        margin-left: var(--offcanvas-width)!important;
+      }
+.offcanvas-backdrop::before{
+    display: none;
+}
+    .sidebar-nav{
+        transform: none!important;
+        visibility: visible!important;
+        top: var(--offcanvas-height)!important;
+        height: calc(100% - var(--offcanvas-height));
+    }
+
+}
+.sidebare-link{
+    display: flex;
+    align-items: center;
+}
+.sidebare-link .right-icon{
+    display: inline-flex;
+}
+.sidebare-link[aria-expanded="true"] .right-icon{
+    transform: rotate(180deg);
+    transition: all ease 0.25s;
+}
+.--bg-dark-light{
+background-color:  var(--color-secondary);
+color: white;
+}
+body{
+    background-color: #F9F9ED;
+}
+.--bg-dark{
+    color: white;
+    background-color: var(--color-dark);
+}
+a{
+    color: white!important;
+}
+small{
+    color: var(--color-dark-light);
+}
+.text-muted{
+    color: white!important;
+}
+.dashbord-card{
+    box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-white);
+    color:var(--color-dark);
+}
+.progress{
+    width: 100%;
+    height: 10px;
+}
+.form-control{
+    border:none;
+    border-radius: 0;
+    color: var(--color-dark-light);
+}
+.table >thead> tr>th {
+    color: #087E8B;
+}
+.table >tbody> tr>th {
+    color: #0B3954;
+}
+.table >tbody> tr>td {
+    color: var(--color-dark-light);
+}
+.btn-danger{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-white);
+    background-color: var(--color-danger);
+    border: none;
+}
+.btn-success{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 14px;
+    color: var(--color-white);
+    background-color: var(--color-success);
+    border: none;
+}
